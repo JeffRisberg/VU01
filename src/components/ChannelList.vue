@@ -2,25 +2,30 @@
   <div class="channels">
     <h1>{{ msg }}</h1>
     <table class="table" style="text-align: left">
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Status</th>
-    </tr>
-    </thead>
-    <tbody>
+      <thead>
         <tr>
-          <td>Salesforce</td>
+          <th>Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chatbot 1</td>
           <td>active</td>
           <td>edit</td>
         </tr>
         <tr>
-              <td>Atlassian</td>
-              <td>active</td>
-              <td>edit</td>
+          <td>Chatbox 2</td>
+          <td>active</td>
+          <td>edit</td>
         </tr>
-        </tbody>
-        </table>
+        <tr>
+          <td>Interceptor</td>
+          <td>active</td>
+          <td>edit</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 

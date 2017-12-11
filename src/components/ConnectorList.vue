@@ -2,13 +2,13 @@
   <div class="connectors">
     <h1>{{ msg }}</h1>
     <table class="table" style="text-align: left">
-        <thead>
+      <thead>
         <tr>
         <th>Name</th>
         <th>Status</th>
         </tr>
-        </thead>
-        <tbody>
+      </thead>
+      <tbody>
             <tr>
               <td>Salesforce</td>
               <td>active</td>
@@ -19,8 +19,8 @@
                   <td>active</td>
                   <td>edit</td>
             </tr>
-            </tbody>
-            </table>
+      </tbody>
+    </table>
   </div>
 </template>
 
