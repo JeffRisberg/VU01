@@ -1,6 +1,6 @@
 <template>
   <div class="connectors">
-    <h1>{{ msg }}</h1>
+    <h1>Connector List</h1>
     <table class="table" style="text-align: left">
       <thead>
         <tr>
@@ -24,7 +24,6 @@ export default {
   name: 'ConnectorList',
   data () {
     return {
-      msg: 'Connector List',
       connectors: [
         { name: 'Salesforce', status: 'active' },
         { name: 'Atlassian', status: 'active' },

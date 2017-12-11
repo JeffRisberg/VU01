@@ -4,6 +4,7 @@
     <ul>
       <li><a href="/#/connectors">Connector List</a></li>
       <li><a href="/#/channels">Channel List</a></li>
+      <li><a href="/#/incidents">Incident List</a></li>
     </ul>
     <h2>Ecosystem</h2>
     <ul>

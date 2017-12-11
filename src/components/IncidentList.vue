@@ -1,17 +1,17 @@
 <template>
-  <div class="channels">
-    <h1>Channel List</h1>
+  <div class="incidents">
+    <h1>Incident List</h1>
     <table class="table" style="text-align: left">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Status</th>
+              <th>Description</th>
+              <th>Resolution</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="channel in channels">
-              <td>{{ channel.name }}</td>
-              <td>{{ channel.status }}</td>
+            <tr v-for="incident in incidents">
+              <td>{{ incident.text }}</td>
+              <td>{{ incident.resolution }}</td>
               <td>edit</td>
             </tr>
           </tbody>
@@ -21,13 +21,13 @@
 
 <script>
 export default {
-  name: 'ChannelList',
+  name: 'IncidentList',
   data () {
     return {
-      channels: [
-        { name: 'Chatbot 1', status: 'active' },
-        { name: 'Chatbot 2', status: 'active' },
-        { name: 'Interceptor', status: 'active' }
+      incidents: [
+        { text: 'Cannot login to app', resolution: 'pending' },
+        { text: 'No response within wait time', resolution: 'restarted server' },
+        { text: 'Cannot install new application', resolution: 'handled' }
       ]
     }
   }
