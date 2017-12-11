@@ -4,21 +4,16 @@
     <table class="table" style="text-align: left">
       <thead>
         <tr>
-        <th>Name</th>
-        <th>Status</th>
+          <th>Name</th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody>
-            <tr>
-              <td>Salesforce</td>
-              <td>active</td>
-              <td>edit</td>
-            </tr>
-            <tr>
-                  <td>Atlassian</td>
-                  <td>active</td>
-                  <td>edit</td>
-            </tr>
+        <tr v-for="connector in connectors">
+          <td>{{ connector.name }}</td>
+          <td>{{ connector.status }}</td>
+          <td>edit</td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -29,7 +24,12 @@ export default {
   name: 'ConnectorList',
   data () {
     return {
-      msg: 'Connector List'
+      msg: 'Connector List',
+      connectors: [
+        { name: 'Salesforce', status: 'active' },
+        { name: 'Atlassian', status: 'active' },
+        { name: 'BMC', status: 'active' }
+      ]
     }
   }
 }

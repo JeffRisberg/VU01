@@ -2,30 +2,20 @@
   <div class="channels">
     <h1>{{ msg }}</h1>
     <table class="table" style="text-align: left">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Chatbot 1</td>
-          <td>active</td>
-          <td>edit</td>
-        </tr>
-        <tr>
-          <td>Chatbox 2</td>
-          <td>active</td>
-          <td>edit</td>
-        </tr>
-        <tr>
-          <td>Interceptor</td>
-          <td>active</td>
-          <td>edit</td>
-        </tr>
-      </tbody>
-    </table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="channel in channels">
+              <td>{{ channel.name }}</td>
+              <td>{{ channel.status }}</td>
+              <td>edit</td>
+            </tr>
+          </tbody>
+        </table>
   </div>
 </template>
 
@@ -34,7 +24,12 @@ export default {
   name: 'ChannelList',
   data () {
     return {
-      msg: 'Channel List'
+      msg: 'Channel List',
+      channels: [
+        { name: "Chatbot 1", status: 'active' },
+        { name: "Chatbot 2", status: 'active' },
+        { name: "Interceptor", status: 'active' },
+      ]
     }
   }
 }
