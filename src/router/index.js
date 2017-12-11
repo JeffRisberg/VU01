@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import ConnectorList from '@/components/ConnectorList'
+import ConnectorEdit from '@/components/ConnectorEdit'
 import ChannelList from '@/components/ChannelList'
 import IncidentList from '@/components/IncidentList'
 import HelloWorld from '@/components/HelloWorld'
@@ -13,6 +14,11 @@ export default new Router({
       path: '/connectors',
       name: 'ConnectorList',
       component: ConnectorList
+    },
+    {
+      path: '/connectorEdit',
+      name: 'ConnectorEdit',
+      component: ConnectorEdit
     },
     {
       path: '/channels',

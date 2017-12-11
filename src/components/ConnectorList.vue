@@ -10,7 +10,7 @@
       </thead>
       <tbody>
         <tr v-for="connector in connectors">
-          <td>{{ connector.name }}</td>
+          <td><a href="#/connectorEdit">{{ connector.name }}</a></td>
           <td>{{ connector.status }}</td>
           <td>edit</td>
         </tr>
