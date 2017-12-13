@@ -1,2 +1,2 @@
-{"text":"Feed the cat"}
-{"test":"Walk the dog"}
+{"body":"Feed the cat","completed":false}
+{"body":"Walk the dog","completed":false}
