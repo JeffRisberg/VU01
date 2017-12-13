@@ -15,7 +15,8 @@
                 this.$store.dispatch('getTodo', e.target.value)
             },
             addTodo() {
-                this.$store.dispatch('addTodo')
+                const body = this.$store.getters.newTodo
+                this.$store.dispatch('addTodo', {body: body, completed: false})
                 this.$store.dispatch('clearTodo')
             }
         },
