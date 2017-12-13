@@ -34,7 +34,8 @@ export default{
         }
     },
     mounted: function() {
-      console.log("CurrentTodos Mounted");
+        console.log("CurrentTodos Mounted");
+        this.$store.dispatch('fetchTodos');
     },
     computed: {
         todos() {

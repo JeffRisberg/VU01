@@ -19,6 +19,10 @@
                 this.$store.dispatch('removeTodo', todo)
             }
         },
+        mounted: function() {
+            console.log("CompletedTodos Mounted");
+            this.$store.dispatch('fetchTodos');
+        },
         computed: {
             completed() {
                 return this.$store.getters.completedTodos

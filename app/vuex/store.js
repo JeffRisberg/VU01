@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import fetch from 'isomorphic-fetch';
 
 Vue.use(Vuex)
 
@@ -41,7 +42,12 @@ export default new Vuex.Store({
 
     actions: {
         fetchTodos({commit}, todo) {
-            commit('FETCH_TODOS', todo)
+            // async call here
+            fetch('/api/todos', {})
+                  .then(response => response.json())
+                  .then((json) => {
+                    commit('FETCH_TODOS', json.data);
+                  });
         },
         getTodo({commit}, todo) {
             commit('GET_TODO', todo)
