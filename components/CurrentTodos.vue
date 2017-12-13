@@ -33,6 +33,9 @@ export default{
             this.$store.dispatch('removeTodo', todo)
         }
     },
+    mounted: function() {
+      console.log("CurrentTodos Mounted");
+    },
     computed: {
         todos() {
             return this.$store.getters.todos
