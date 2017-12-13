@@ -1,27 +1,23 @@
-# VU01
+# Learn Vuex by Building a Notes App
 
-> A Vue.js project
+This code is for the tutorial on building a Notes App using VueJs and Vuex
 
-## Build Setup
+Check out the full tutorial on [coligo](http://coligo.io/learn-vuex-by-building-notes-app/)
 
-``` bash
-# install dependencies
+### Install the dependencies
+
+```bash
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Run the dev server with hot reload at localhost:8080
+
+```bash
+npm run dev
+```
+
+### Build the app for production
+
+```bash
+npm run build
+```
