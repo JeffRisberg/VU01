@@ -1,8 +1,8 @@
 module.exports = {
   entry: './main.js',
   output: {
-    path: __dirname,
-    filename: 'build.js'
+    path: __dirname + "/dist",
+    filename: "bundle.js"
   },
   module: {
     loaders: [
@@ -16,5 +16,10 @@ module.exports = {
         loader: 'vue-loader'
       }
     ]
+  },
+  resolve: {
+    alias: {
+      vue$: 'vue/dist/vue.esm.js'
+    }
   }
 }

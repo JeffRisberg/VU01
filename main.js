@@ -1,9 +1,13 @@
 import Vue from 'vue'
+import Vuex from 'vuex';
 import store from './vuex/store'
-import App from './components/App.vue'
+import App from './App.vue'
 
-new Vue({
-  store, // inject store to all children
-  el: 'body',
+Vue.use(Vuex);
+
+const myApp = new Vue({
+  store,
+  template: '<App/>',
   components: { App }
-})
+});
+myApp.$mount('#app');
