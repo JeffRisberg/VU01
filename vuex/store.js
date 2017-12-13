@@ -30,7 +30,6 @@ export default new Vuex.Store({
         REMOVE_TODO(state, todo) {
             var todos = state.todos
             todos.splice(todos.indexOf(todo), 1)
-
         },
         COMPLETE_TODO(state, todo) {
             todo.completed = !todo.completed
