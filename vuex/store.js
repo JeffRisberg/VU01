@@ -9,8 +9,11 @@ export default new Vuex.Store({
         newTodo: ''
     },
     mutations: {
+        FETCH_TODOS(state, todos) {
+            state.todos = todos;
+        },
         GET_TODO(state, todo) {
-            state.newTodo =  todo
+            state.newTodo = todo
         },
         ADD_TODO(state) {
             state.todos.push({
@@ -38,6 +41,9 @@ export default new Vuex.Store({
     },
 
     actions: {
+        fetchTodos({commit}, todo) {
+            commit('FETCH_TODOS', todo)
+        },
         getTodo({commit}, todo) {
             commit('GET_TODO', todo)
         },
