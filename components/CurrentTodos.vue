@@ -19,26 +19,28 @@
         </ul>
     </div>
 </template>
+
 <script>
 export default{
     methods: {
-        edit(todo){
+        edit(todo) {
             this.$store.dispatch('editTodo', todo)
         },
-        complete(todo){
+        complete(todo) {
             this.$store.dispatch('completeTodo', todo)
         },
-        remove(todo){
+        remove(todo) {
             this.$store.dispatch('removeTodo', todo)
         }
     },
     computed: {
-        todos(){
+        todos() {
             return this.$store.getters.todos
         }
     }
 }
 </script>
+
 <style>
     .btn-group{
         float: right;

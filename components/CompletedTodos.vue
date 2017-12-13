@@ -9,19 +9,18 @@
                 </button>
             </li>
         </ul>
-
     </div>
 </template>
 
 <script>
     export default{
         methods: {
-            remove(todo){
+            remove(todo) {
                 this.$store.dispatch('removeTodo', todo)
             }
         },
         computed: {
-            completed(){
+            completed() {
                 return this.$store.getters.completedTodos
             }
         }
