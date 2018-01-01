@@ -37,7 +37,7 @@
     "nedb": "^1.8.0",
     "vue-hot-reload-api": "^2.2.4",
     "vue-html-loader": "^1.2.2",
-    "vue-loader": "^13.6.1",
+    "vue-loader": "^13.6.2",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.13",
     "webpack": "^3.10.0"
